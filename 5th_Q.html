@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th_Qustion</title>
+    <style>
+        img{
+            height: 160px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        .contenar{
+            display: grid;
+            width: 100vw;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .image{
+            background-color: #51514f;
+            margin: 5px;
+        }
+      @media screen and (max-width:800px) {
+        .contenar{
+            display: grid;
+            width: 100vw;
+            grid-template-columns: repeat(1,1fr);
+            align-content: center;
+            text-align: center;
+        }
+        
+      }
+    </style>
+</head>
+<body>
+    <h1><u>Random Image</u></h1>
+
+    <div class="contenar">
+        <div class="image">        
+            <img src="./random_image_1.jpeg" alt="" class="image1">
+        </div>
+        <div class="image">
+            <img src="./random_image_2.jpeg" alt="" class="image2">
+        </div>
+        <div class="image">
+            <img src="./random_image_3.jpeg" alt="" class="image3">
+        </div>
+        <div class="image">
+            <img src="./random_image_4.jpeg" alt="" class="image4">
+        </div>
+        <div class="image">
+            <img src="./random_image_5.jpeg" alt="" class="image5">
+        </div>
+        <div class="image">
+            <img src="./random_image_6.jpeg" alt="" class="image6">
+        </div>
+    </div>
+</body>
+</html>

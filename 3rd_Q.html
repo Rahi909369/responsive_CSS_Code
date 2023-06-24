@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd_Qustion</title>
+
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .navbar {
+            position: fixed;
+            background-color: #2d2c2c;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            z-index: 100;
+        }
+
+        p {
+            display: inline;
+            padding: 5px;
+            color: aliceblue;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            color: #1c4ee1;
+        }
+
+        .logo>h2 {
+            margin: 4px 20px;
+        }
+
+        button {
+            background-color: #1c4ee1;
+            color: aliceblue;
+            padding: 5px 30px;
+            margin: 17px 0px;
+            border-radius: 8px;
+            position: relative;
+            right: -55%;
+        }
+
+        .nav {
+            margin: 20px;
+        }
+
+        @media screen and (max-width: 530px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .none {
+                margin: 15px 20px;
+
+            }
+
+            .bar {
+                height: 5px;
+                width: 50px;
+                margin: 5px 0px;
+                background-color: aliceblue;
+                z-index: 4;
+            }
+
+            .button {
+                display: none;
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 70px;
+            order: 2;
+        }
+
+        .sayHi {
+            font-size: 25px;
+            color: #2d2c2c;
+        }
+
+        .oneCard {
+            color: #1c4ee1;
+            margin: 10px 0px;
+        }
+
+        .coCard {
+            color: #1c4ee1;
+            font-size: 18px;
+            padding-left: 0px;
+            display: block;
+        }
+
+        .con_pera {
+            color: black;
+        }
+
+        .bank_logo {
+            padding: 0px 0px 20px 0px;
+        }
+
+        .content1 {
+            margin: 15% 0% 0% 5%;
+        }
+
+        .content2 {
+            margin-left: 250px;
+        }
+
+        .footer {
+            background-color: #000;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            top: 700px;
+        }
+
+        .Foot_head {
+            color: blue;
+        }
+
+        .Foot_per {
+            color: aliceblue;
+            display: block;
+        }
+
+        @media screen and (max-width: 800px) {
+            .content {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                margin: 3px;
+            }
+
+            .content2 {
+                margin-left: 0px;
+            }
+
+            .image1 {
+                height: 300px;
+                width: 300px;
+                padding: 50px 20px;
+            }
+
+            .bank_logo {
+                height: 80px;
+                width: 370px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .footer {
+                background-color: #fff;
+                position: relative;
+                top: 900px;
+            }
+
+            .Foot_head {
+                color: blue;
+                font-size: 30px;
+                padding-bottom: 40px;
+            }
+
+            .Foot_per {
+                color: #000;
+                display: block;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all_position">
+
+        <div class="navbar">
+            <div class="logo">
+                <h2>LO <br> GO</h2>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <p>Home</p>
+                </a><a href="#">
+                    <p>Blog</p>
+                </a><a href="About">
+                    <p>About</p>
+                </a><a href="#">
+                    <p>Contact</p>
+                </a>
+            </div>
+            <div class="button">
+                <button>Login</button>
+            </div>
+
+            <div class="none">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+                <p class="sayHi">Say Hi To</p>
+                <h1 class="oneCard">One Card</h1>
+                <p class="coCard">Co-baranded Card Issuers:</p>
+                <img src="./Some _bank_logo.jpg" alt="" class="bank_logo">
+                <br>
+                <p class="con_pera">India's best metal credit card. Built with full_stak tech. Backend by the
+                    principles of simplicity, transparency, and giving back control to the user. </p>
+
+            </div>
+            <div class="content2">
+                <img src="./transection_page_photo.jpg" alt="" height="600px" width="500px" class="image1">
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2 class="Foot_head">No Hidden Fees Ever</h2>
+            <p class="Foot_per">No Joining Fees.</p>
+            <p class="Foot_per">No Annual Fees.</p>
+            <p class="Foot_per">No Rewards Redempation Fees.</p>
+        </div>
+    </div>
+</body>
+
+</html>

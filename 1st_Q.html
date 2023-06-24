@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st_Qustion</title>
+
+    <style>
+        .navbar {
+            position: fixed;
+            background-color: #2d2c2c;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+        }
+        p {
+            display: inline;
+            padding: 5px;
+            color: aliceblue;
+        }
+        a {
+            text-decoration: none;
+        }
+        .logo {
+            color: #1c4ee1;
+        }
+        .logo>h2 {
+            margin: 4px 20px;
+        }
+        button {
+            background-color: #1c4ee1;
+            color: aliceblue;
+            padding: 5px 30px;
+            margin: 17px 0px;
+            border-radius: 8px;
+        }
+        .nav {
+            margin: 20px;
+        }
+        @media screen and (max-width: 530px) {
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+            }
+            .nav {
+                display: none;
+            }
+
+            .none{
+                margin: 15px 20px ;
+
+            }
+
+            .bar {
+                height: 5px;
+                width: 50px;
+                margin: 5px 0px;
+                background-color: aliceblue;
+                z-index: 4;
+            }
+
+            .button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h2>LO <br> GO</h2>
+        </div>
+        <div class="nav">
+            <a href="#">
+                <p>Home</p>
+            </a><a href="#">
+                <p>Blog</p>
+            </a><a href="About">
+                <p>About</p>
+            </a><a href="#">
+                <p>Contact</p>
+            </a>
+        </div>
+        <div class="button">
+            <button>Login</button>
+        </div>
+
+        <div class="none">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</body>
+
+</html>

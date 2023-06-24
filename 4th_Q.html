@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th_Qustion</title>
+    <style>
+        .table {
+            background-color: #060606;
+            color: aliceblue;
+            padding: 20px 20px;
+        }
+
+        .td {
+            display: grid;
+            width: 95vw;
+            grid-template-columns: repeat(3, 1fr);
+            color: aliceblue;
+            border: 1px solid white;
+        }
+
+        p {
+            display: block;
+            border: 1px solid white;
+            border-right: 0px;
+            border-left: 0px;
+            margin: 0px;
+            padding: 4px 40px 4px 10px;
+        }
+
+        @media screen and (max-width: 580px) {
+            .td {
+                display: grid;
+                width: 100vw;
+                grid-template-columns: repeat(3, 1fr);
+                color: aliceblue;
+                border: 0px;
+            }
+            p{
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+            }
+            .name{
+                width: 200px;
+            }
+
+            .phone {
+                display: none;
+                background: #8a2121;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <h1>Student DeshBoard</h1>
+        <div class="td">
+            <div class="name">
+                <p>Name</p>
+                <p>Rahul Sharma</p>
+                <p>Priya Patel</p>
+                <p>Amit Sing</p>
+                <p>Sneha Varma</p>
+                <p>Mohit Agurwal</p>
+                <p>Neha Gupta</p>
+                <p>Rajesh Khumar</p>
+                <p>Anita Desal</p>
+                <p>Varun Malhota</p>
+                <p>Pooja Mehta</p>
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <p>rahul.sharma@example.com</p>
+                <p>priya.patel@example.com</p>
+                <p>ami.sing@example.com</p>
+                <p>sneha.vharma@example.com</p>
+                <p>mohit.agarwal@example.com</p>
+                <p>neha.gupta@example.com</p>
+                <p>rajesh.kumar@example.com</p>
+                <p>anita.desal@example.com</p>
+                <p>varun.malhota@example.com</p>
+                <p>pooja.mwhta@example.com</p>
+            </div>
+
+            <div class="phone">
+                <p>Phone</p>
+                <p>9876543210</p>
+                <p>8765328962</p>
+                <p>7654893467</p>
+                <p>65439561752</p>
+                <p>5432872156</p>
+                <p>4935671564</p>
+                <p>2104672594</p>
+                <p>65892154698</p>
+                <p>10985467863</p>
+                <p>0987634897</p>
+            </div>
+        </div>
+
+</body>
+
+</html>
